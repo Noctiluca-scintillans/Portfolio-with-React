@@ -6,20 +6,22 @@ import Button from "react-bootstrap/Button";
 export default function Porfolio() {
 	return (
 		<div className="d-flex flex-column align-items-center row-cols-2">
-			<h4>React-Bootstrap Form Component</h4>
+			<h4>
+				Please Reach out if you have any questions, or just to say "hello"!
+			</h4>
 			<Form>
 				<Form.Group>
 					<Form.Label>Enter your full name:</Form.Label>
 					<Form.Control
 						type="text"
-						placeholder="Enter your full name"
+						placeholder="Captain Tightpants"
 					/>
 				</Form.Group>
 				<Form.Group>
 					<Form.Label>Your email address:</Form.Label>
 					<Form.Control
 						type="email"
-						placeholder="Enter your your email address"
+						placeholder="originalbrowncoat@serenityvalley.org"
 					/>
 				</Form.Group>
 				<Form.Group>

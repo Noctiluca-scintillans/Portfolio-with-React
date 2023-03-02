@@ -7,14 +7,17 @@ export default function Portfolio() {
 		{
 			Id: 1,
 			title: "Project 1",
+			subtitle: "it was my first project",
 			description: "It's a really cool project",
 			repo: "place@github.com",
 			deployed_URL: "https://github.com",
-			image: "https://images.image",
+			image:
+				" <img src='https://blah/blah/etc' className='img-fluid shadow-4' alt='...' />", //with this work?
 		},
 		{
 			Id: 2,
 			title: "Project 2",
+			subtitle: "it was my first project",
 			description: "It's a really okay project",
 			repo: "place@github.com",
 			deployed_URL: "https://github.com",
@@ -22,11 +25,14 @@ export default function Portfolio() {
 		},
 		{
 			Id: 3,
-			title: "Project 3",
-			description: "It's just a project",
-			repo: "place@github.com",
-			deployed_URL: "https://github.com",
-			image: "https://images.image",
+			title: "Mail-Me-Seeds",
+			subtitle: "Where gardeners share with gardeners!",
+			description:
+				"This app shows that I can design, build, and deploy a full-stack web application. I used agile software development methods and a Git branching workflow to collaboratively develop this product.",
+			repo: "https://github.com/TheBluWiz/mail-me-seeds",
+			deployed_URL: "https://github.comhttps://mail-me-seeds.herokuapp.com/",
+			image:
+				"https://asset.cloudinary.com/dubimtz4j/7beb028fed7f98826b16f1366a92697e",
 		},
 	];
 
@@ -44,11 +50,11 @@ export default function Portfolio() {
 							<Card.Body class="p-3 mb-2 bg-dark text-white">
 								<Card.Title>{item.title}</Card.Title>
 								<Card.Subtitle className="mb-2 text-muted">
-									Card Subtitle
+									{item.subtitle}
 								</Card.Subtitle>
 								<Card.Text>{item.description}</Card.Text>
-								<Card.Link href="#">{item.repo}</Card.Link>
-								<Card.Link href="#">{item.deployed_URL}</Card.Link>
+								Repository:<Card.Link href="#">{item.repo}</Card.Link>
+								Deployment:<Card.Link href="#"> {item.deployed_URL}</Card.Link>
 							</Card.Body>
 						</Card>
 					</div>
