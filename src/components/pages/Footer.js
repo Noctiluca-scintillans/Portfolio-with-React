@@ -10,21 +10,24 @@ export default function Footer() {
 		<MDBFooter className="text-center text-lg-start text-reset">
 			<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 				<div className="me-5 d-lg-block">
-					<span>Get connected with me on social networks:</span>
+					<span>Connect with me:</span>
 				</div>
 				<div>
-					<a href="https://stackoverflow.com/users/9012884/rhys-smoker">
+					<a
+						style={{ marginLeft: ".5rem" }}
+						href="https://stackoverflow.com/users/9012884/rhys-smoker">
 						<FaStackOverflow />
 					</a>
 
-					<a href="https://www.linkedin.com/in/rhys-smoker/">
-						<a
-							style={{ marginLeft: ".5rem" }}
-							FaLinkedinIn
-						/>
+					<a
+						style={{ marginLeft: ".5rem" }}
+						href="https://www.linkedin.com/in/rhys-smoker/">
+						<FaLinkedinIn />
 					</a>
 
-					<a href="https://github.com/Noctiluca-scintillans">
+					<a
+						style={{ marginLeft: ".5rem" }}
+						href="https://github.com/Noctiluca-scintillans">
 						<GoMarkGithub />
 					</a>
 				</div>
