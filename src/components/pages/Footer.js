@@ -1,13 +1,7 @@
 //todo footer should be used in line 38 of container.js
 
 import React from "react";
-import {
-	MDBFooter,
-	MDBContainer,
-	MDBRow,
-	MDBCol,
-	MDBIcon,
-} from "mdb-react-ui-kit";
+import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
 
 export default function Footer() {
 	return (
@@ -21,15 +15,15 @@ export default function Footer() {
 
 				<div>
 					<a
-						href=""
+						href="https://stackoverflow.com/users/9012884/rhys-smoker"
 						className="me-4 text-reset">
 						<MDBIcon
 							fab
-							icon="google"
+							icon="stack-overflow"
 						/>
 					</a>
 					<a
-						href=""
+						href="https://www.linkedin.com/in/rhys-smoker/"
 						className="me-4 text-reset">
 						<MDBIcon
 							fab
@@ -37,7 +31,7 @@ export default function Footer() {
 						/>
 					</a>
 					<a
-						href=""
+						href="https://github.com/Noctiluca-scintillans"
 						className="me-4 text-reset">
 						<MDBIcon
 							fab
