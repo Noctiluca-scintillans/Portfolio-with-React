@@ -4,8 +4,10 @@ import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import Footer from "./pages/Footer"; //todo make footer.js
 
-export default function PortfolioContainer() {
+//export default function PortfolioContainer() {
+export default function Container() {
 	const [currentPage, setCurrentPage] = useState("aboutMe"); //default state
 
 	// This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
@@ -33,6 +35,7 @@ export default function PortfolioContainer() {
 			/>
 			{/* Here we are calling the renderPage method which will return a component  */}
 			{renderPage()}
+			<Footer />
 		</div>
 	);
 }
