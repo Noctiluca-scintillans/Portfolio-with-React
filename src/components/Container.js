@@ -1,3 +1,6 @@
+//container.js renders the whole page view- NavTabs, Current Page, and Footer
+//current page is AboutMe, Portfolio, Contact, or Resume components depending on the currentPage state. What changes the currentPage state? handlePageChange sends a parameter over.
+
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
 import AboutMe from "./pages/AboutMe";
@@ -6,7 +9,7 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Footer from "./pages/Footer";
 
-//export default function PortfolioContainer() {
+//export default function Container() {
 export default function Container() {
 	const [currentPage, setCurrentPage] = useState("aboutMe"); //default state
 

@@ -88,6 +88,7 @@ export default function Portfolio() {
 								style={{ color: "#dda15e" }}>
 								{item.subtitle}
 							</Card.Subtitle>
+							{/* <Card.Img>{item.image}</Card.Img> */}
 							<Card.Text>{item.description}</Card.Text>
 							<Card.Link href={item.repo}>Repository</Card.Link>
 							<Card.Link href={item.deployed_URL}>Deployed App</Card.Link>
