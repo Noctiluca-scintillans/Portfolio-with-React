@@ -4,7 +4,7 @@ import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
-import Footer from "./pages/Footer"; //todo make footer.js
+import Footer from "./pages/Footer";
 
 //export default function PortfolioContainer() {
 export default function Container() {
@@ -27,7 +27,10 @@ export default function Container() {
 	const handlePageChange = (page) => setCurrentPage(page); //handlePageChange passes a parameter to setCurrentPage in order to change the state
 
 	return (
-		<div class="p-3 mb-2 bg-dark text-white min-vh-100">
+		//	<div class="p-3 mb-2 bg-dark text-white min-vh-100">
+		<div
+			class="p-3 mb-2 text-white min-vh-100"
+			style={{ backgroundColor: "#283618", color: "#fefae0" }}>
 			{/* We are passing the currentPage from state and the function to update it */}
 			<NavTabs
 				currentPage={currentPage}

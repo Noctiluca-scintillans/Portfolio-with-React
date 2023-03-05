@@ -8,25 +8,25 @@ import { FaStackOverflow } from "react-icons/fa";
 export default function Footer() {
 	return (
 		<MDBFooter className="text-center text-lg-start text-reset">
-			<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+			<section className="d-flex justify-content-center justify-content-center p-4 border-bottom">
 				<div className="me-5 d-lg-block">
-					<span>Connect with me:</span>
+					<span>Let's connect !</span>
 				</div>
 				<div>
 					<a
-						style={{ marginLeft: ".5rem" }}
+						style={{ marginLeft: "3rem" }}
 						href="https://stackoverflow.com/users/9012884/rhys-smoker">
 						<FaStackOverflow />
 					</a>
 
 					<a
-						style={{ marginLeft: ".5rem" }}
+						style={{ marginLeft: "3rem" }}
 						href="https://www.linkedin.com/in/rhys-smoker/">
 						<FaLinkedinIn />
 					</a>
 
 					<a
-						style={{ marginLeft: ".5rem" }}
+						style={{ marginLeft: "3rem" }}
 						href="https://github.com/Noctiluca-scintillans">
 						<GoMarkGithub />
 					</a>

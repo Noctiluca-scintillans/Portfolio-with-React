@@ -12,6 +12,7 @@ export default function AboutMe() {
 				src="https://res.cloudinary.com/dubimtz4j/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1677806548/RhysSelfie_j2uq18.jpg"
 				width={250}
 				alt="portrait of rhys"
+				border="1px solid"
 			/>
 			<p style={styleObj}>
 				I am a life-long learner who loves attaining new skills and working on
@@ -29,3 +30,5 @@ export default function AboutMe() {
 		</div>
 	);
 }
+
+//https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
