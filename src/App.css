@@ -5,7 +5,9 @@
   display:block;
 }
 
-
+.portrait {
+  padding-bottom: 5px;
+}
 
 /* .App-header {
   background-color: #283618;

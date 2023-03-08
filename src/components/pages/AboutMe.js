@@ -7,9 +7,9 @@ export default function AboutMe() {
 			<img
 				src="https://res.cloudinary.com/dubimtz4j/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1677806548/RhysSelfie_j2uq18.jpg"
 				width={250}
-				padding-bottom="15px"
 				alt="portrait of rhys"
 				border="1px solid"
+				className=".portrait"
 			/>
 			<p align="left">
 				I am a life-long learner who loves attaining new skills and working on
