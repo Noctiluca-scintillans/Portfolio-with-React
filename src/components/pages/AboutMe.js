@@ -1,20 +1,17 @@
 import React from "react";
 
 export default function AboutMe() {
-	const styleObj = {
-		textAlign: "left",
-		paddingTop: "20px",
-	};
 	return (
-		<div>
+		<div align="center">
 			<h1>About Rhys</h1>
 			<img
 				src="https://res.cloudinary.com/dubimtz4j/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1677806548/RhysSelfie_j2uq18.jpg"
 				width={250}
+				padding-bottom="15px"
 				alt="portrait of rhys"
 				border="1px solid"
 			/>
-			<p style={styleObj}>
+			<p align="left">
 				I am a life-long learner who loves attaining new skills and working on
 				teams. I am both hard-working and creative. My undergraduate degree from
 				Cal Poly Humboldt was Oceanographic Science with a Visual Arts minor. I
@@ -30,5 +27,3 @@ export default function AboutMe() {
 		</div>
 	);
 }
-
-//https://www.w3schools.com/bootstrap4/bootstrap_cards.asp

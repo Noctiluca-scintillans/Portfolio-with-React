@@ -14,7 +14,7 @@ export default function Portfolio() {
 			repo: "https://github.com/Noctiluca-scintillans/Employee-Tracker",
 			deployed_URL:
 				"https://drive.google.com/file/d/1iJv_3YIaGsj8JPUmZd-GV1ZTAgd9grn9/view",
-			image: " <img src='asdf' className='img-fluid shadow-4' alt='...' />", //todo
+			image: "...", //todo
 		},
 		{
 			Id: 2,
@@ -25,7 +25,7 @@ export default function Portfolio() {
 			repo: "https://github.com/Noctiluca-scintillans/E-Commerce-Back-End",
 			deployed_URL:
 				"https://drive.google.com/file/d/1LqEl-L1l1fmLKjAZYBI0TBsrN4bHrP-Z/view",
-			image: " <img src='asdf' className='img-fluid shadow-4' alt='...' />",
+			image: "...",
 		},
 		{
 			Id: 3,
@@ -35,7 +35,7 @@ export default function Portfolio() {
 				"This app demonstrates my use of the Model-View-Controller architechtural paradigm. It uses Handlebars.js as the templating language, Sequelize as the ORM(Object Relational Mapping), and the express-session npm package for authentification. ",
 			repo: "https://github.com/Noctiluca-scintillans/MVC-Tech-Blog",
 			deployed_URL: "https://dashboard.heroku.com/apps/stormy-gorge-58008",
-			image: " <img src='asdf' className='img-fluid shadow-4' alt='...' />", // TODO
+			image: "...", // TODO
 		},
 		{
 			Id: 4,
@@ -45,8 +45,7 @@ export default function Portfolio() {
 				"This app shows that I can build and structure an API. I used Express.js for routing, a MongoDB database, and the Mongoose ODM. Please note that the `deployed` url will take you to a walk-through video as the APP is not actually deployed. ",
 			repo: "https://github.com/Noctiluca-scintillans/Social-Network-API",
 			deployed_URL: "https://watch.screencastify.com/v/pOD8r52BeDaPn99UDrVn", //todo do a new walkthrough
-			image:
-				" <img src='https://blah/blah/etc' className='img-fluid shadow-4' alt='...' />", //todo take a screenshot
+			image: "...", //todo take a screenshot
 		},
 		{
 			Id: 5,
@@ -78,9 +77,14 @@ export default function Portfolio() {
 			{projects.map((item) => (
 				<div class="d-inline-flex p-2">
 					<Card style={{ width: "20rem" }}>
+						<img
+							src={item.image}
+							className="card-img-top"
+							alt="..."
+						/>
 						<Card.Body
 							// class="p-3 mb-2 bg-dark text-white"
-							class="p-3 mb-2"
+							className="p-3 mb-2 hidden"
 							style={{ backgroundColor: "#606c38" }}>
 							<Card.Title>{item.title}</Card.Title>
 							<Card.Subtitle
@@ -90,8 +94,16 @@ export default function Portfolio() {
 							</Card.Subtitle>
 							{/* <Card.Img>{item.image}</Card.Img> */}
 							<Card.Text>{item.description}</Card.Text>
-							<Card.Link href={item.repo}>Repository</Card.Link>
-							<Card.Link href={item.deployed_URL}>Deployed App</Card.Link>
+							<a
+								className="card-link App-link"
+								href={item.repo}>
+								Repository
+							</a>
+							<Card.Link
+								className="App-link"
+								href={item.deployed_URL}>
+								Deployed App
+							</Card.Link>
 						</Card.Body>
 					</Card>
 				</div>
@@ -99,3 +111,5 @@ export default function Portfolio() {
 		</div>
 	);
 }
+
+//https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
