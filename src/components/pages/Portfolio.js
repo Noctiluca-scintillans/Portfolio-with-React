@@ -14,28 +14,31 @@ export default function Portfolio() {
 			repo: "https://github.com/Noctiluca-scintillans/Employee-Tracker",
 			deployed_URL:
 				"https://drive.google.com/file/d/1iJv_3YIaGsj8JPUmZd-GV1ZTAgd9grn9/view",
-			image: "...", //todo
+			image:
+				"https://cdn.midjourney.com/a7657c2f-3653-4da3-9548-408758010429/grid_0.png", //todo
 		},
 		{
 			Id: 2,
-			title: "E-commerce Back End",
-			subtitle: "Building the back end for an existing site",
+			title: "What's in your cart?",
+			subtitle: "Building the back end for an existing e-commerce site",
 			description:
 				"The shows my mastery of ORM (Object-Relational Mapping). I took a working Express.js API and configured it to use Sequelize to interact with a MySQL database. Please note that the application is not deployed, and the deployed URL takes you to a walkthrough video.",
 			repo: "https://github.com/Noctiluca-scintillans/E-Commerce-Back-End",
 			deployed_URL:
 				"https://drive.google.com/file/d/1LqEl-L1l1fmLKjAZYBI0TBsrN4bHrP-Z/view",
-			image: "...",
+			image:
+				"https://cdn.midjourney.com/c218358e-91e1-40da-b2ab-577c3fc9705d/grid_0.png",
 		},
 		{
 			Id: 3,
-			title: "Frog Log Blog",
+			title: "Frog Blog with Handlebars",
 			subtitle: "A Content Managment System built from scratch.",
 			description:
 				"This app demonstrates my use of the Model-View-Controller architechtural paradigm. It uses Handlebars.js as the templating language, Sequelize as the ORM(Object Relational Mapping), and the express-session npm package for authentification. ",
 			repo: "https://github.com/Noctiluca-scintillans/MVC-Tech-Blog",
 			deployed_URL: "https://dashboard.heroku.com/apps/stormy-gorge-58008",
-			image: "...", // TODO
+			image:
+				"https://cdn.midjourney.com/26486f35-6132-429c-8d55-914459f19111/grid_0.png", // TODO
 		},
 		{
 			Id: 4,
@@ -45,7 +48,8 @@ export default function Portfolio() {
 				"This app shows that I can build and structure an API. I used Express.js for routing, a MongoDB database, and the Mongoose ODM. Please note that the `deployed` url will take you to a walk-through video as the APP is not actually deployed. ",
 			repo: "https://github.com/Noctiluca-scintillans/Social-Network-API",
 			deployed_URL: "https://watch.screencastify.com/v/pOD8r52BeDaPn99UDrVn", //todo do a new walkthrough
-			image: "...", //todo take a screenshot
+			image:
+				"https://media.discordapp.net/attachments/1042540591650717738/1083449688356835388/Rhys_Smoker_a_mongoose_wearing_a_monocle_as_an_old-fashioned_bo_b19c0c11-8903-4eb9-8f17-ce7004c1fdd4.png?width=1051&height=1051", //todo take a screenshot
 		},
 		{
 			Id: 5,
@@ -56,7 +60,7 @@ export default function Portfolio() {
 			repo: "https://github.com/Noctiluca-scintillans/PWA-Text-Editor ",
 			deployed_URL: "https://damp-coast-38671.herokuapp.com/",
 			image:
-				"https://raw.githubusercontent.com/Noctiluca-scintillans/PWA-Text-Editor/main/Assets/two.png",
+				"https://cdn.midjourney.com/c07d972b-8931-4161-9b7b-e3618d096e84/grid_0.png",
 		},
 		{
 			Id: 6,
@@ -67,7 +71,7 @@ export default function Portfolio() {
 			repo: "https://github.com/TheBluWiz/mail-me-seeds",
 			deployed_URL: "https://mail-me-seeds.herokuapp.com/",
 			image:
-				"https://asset.cloudinary.com/dubimtz4j/7beb028fed7f98826b16f1366a92697e",
+				"https://cdn.midjourney.com/dfc5bb94-1992-4f82-9c0e-ee38621a0bef/grid_0.png",
 		},
 	];
 
@@ -79,20 +83,20 @@ export default function Portfolio() {
 					<Card style={{ width: "20rem" }}>
 						<img
 							src={item.image}
-							className="card-img-top"
+							className="hideimg"
 							alt="..."
 						/>
 						<Card.Body
 							// class="p-3 mb-2 bg-dark text-white"
-							className="p-3 mb-2 hidden"
-							style={{ backgroundColor: "#606c38" }}>
+							className="p-3 mb-2 hideable"
+							// style={{ backgroundColor: "#606c38" }}
+						>
 							<Card.Title>{item.title}</Card.Title>
 							<Card.Subtitle
 								className="mb-2"
 								style={{ color: "#dda15e" }}>
 								{item.subtitle}
 							</Card.Subtitle>
-							{/* <Card.Img>{item.image}</Card.Img> */}
 							<Card.Text>{item.description}</Card.Text>
 							<a
 								className="card-link App-link"

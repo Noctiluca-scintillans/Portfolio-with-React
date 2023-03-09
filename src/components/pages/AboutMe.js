@@ -9,7 +9,7 @@ export default function AboutMe() {
 				width={250}
 				alt="portrait of rhys"
 				border="1px solid"
-				className=".portrait"
+				id="rhys-portrait"
 			/>
 			<p align="left">
 				I am a life-long learner who loves attaining new skills and working on

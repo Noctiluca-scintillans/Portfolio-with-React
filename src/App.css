@@ -1,24 +1,36 @@
-.hidden {
+
+#bodystyle {
+  background-color: #283618;
+   color: #F5F5DC
+}
+
+.hideable {
   display:none;
 }
-.hidden:hover {
+.hideable:hover {
   display:block;
 }
 
-.portrait {
-  padding-bottom: 5px;
+.hideimg {
+  display:block;
 }
 
-/* .App-header {
+.hideimg:hover {
+  display:none;
+}
+
+#rhys-portrait { 
+  margin: 2%;
+}
+
+.App-header {
   background-color: #283618;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #d50d24;
-}  */
+} 
  
 .App-link {
   color: #d4a373; 
@@ -29,11 +41,4 @@
   color:bisque;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} 
+
