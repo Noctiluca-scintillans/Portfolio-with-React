@@ -15,7 +15,8 @@ export default function Portfolio() {
 			deployed_URL:
 				"https://drive.google.com/file/d/1iJv_3YIaGsj8JPUmZd-GV1ZTAgd9grn9/view",
 			image:
-				"https://cdn.midjourney.com/a7657c2f-3653-4da3-9548-408758010429/grid_0.png", //todo
+				"https://cdn.midjourney.com/1a351108-b045-4a0f-9a79-369ef60de8b9/grid_0.png",
+			//"https://cdn.midjourney.com/a7657c2f-3653-4da3-9548-408758010429/grid_0.png", //todo
 		},
 		{
 			Id: 2,

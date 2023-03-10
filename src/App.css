@@ -3,12 +3,14 @@
   height: 20rem !important;
   position: relative !important;
   background-color: #283618;
+  overflow-y: scroll;
 }
 
 .project-content {
   position: absolute;
   background-color: #283618;
   color: #f5f5dc;
+  
 }
 
 /* we want to hide img and display content */
@@ -32,6 +34,7 @@
 #bodystyle {
   background-color: #283618;
   color: #f5f5dc;
+  font-size: calc(10px + 2vmin);
 }
 
 /* .hideable:hover {
@@ -50,14 +53,14 @@
   margin: 2%;
 }
 
-.App-header {
+/* .App-header {
   background-color: #283618;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-}
+} */
 
 .App-link {
   color: #d4a373;
