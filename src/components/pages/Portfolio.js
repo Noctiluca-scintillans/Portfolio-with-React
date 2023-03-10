@@ -53,8 +53,8 @@ export default function Portfolio() {
 		},
 		{
 			Id: 5,
-			title: "Just Another Text Editor",
-			subtitle: "A Progressive Web Application",
+			title: "Primative yet Progressive",
+			subtitle: "A Progressive Web Application text editor",
 			description:
 				" This app creates an object store and includes both Get and Put methods. It works on your desktop without an internet connection. It automatically saves content inside the text editor. It is bundled with webpack and cretes a service worker with workbox that caches static assets. It uses babel in order to use async/await and generates a manifest.json using WebpackPwaManifest plugi-in and can be installed as a PWA (Progressive Web Application).To build this PWA I started with an existing application found here: https://github.com/coding-boot-camp/cautious-meme.",
 			repo: "https://github.com/Noctiluca-scintillans/PWA-Text-Editor ",
@@ -76,19 +76,20 @@ export default function Portfolio() {
 	];
 
 	//a single project component used multiple tiems by .map
+	//note: there are css classes for card, image, body, and title components
 	return (
 		<div>
 			{projects.map((item) => (
 				<div class="d-inline-flex p-2">
-					<Card style={{ width: "20rem" }}>
+					<Card className="project-card">
 						<img
 							src={item.image}
-							className="hideimg"
+							className="project-img"
 							alt="..."
 						/>
 						<Card.Body
-							// class="p-3 mb-2 bg-dark text-white"
-							className="p-3 mb-2 hideable"
+							//p-3 and mb-2 are padding and margin from bootstrap
+							className="p-3 mb-2 hideable project-content"
 							// style={{ backgroundColor: "#606c38" }}
 						>
 							<Card.Title>{item.title}</Card.Title>
@@ -115,5 +116,4 @@ export default function Portfolio() {
 		</div>
 	);
 }
-
 //https://www.w3schools.com/bootstrap4/bootstrap_cards.asp

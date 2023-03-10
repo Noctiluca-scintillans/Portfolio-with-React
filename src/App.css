@@ -1,25 +1,52 @@
-
-#bodystyle {
+.project-card {
+  width: 20rem !important;
+  height: 20rem !important;
+  position: relative !important;
   background-color: #283618;
-   color: #F5F5DC
+}
+
+.project-content {
+  position: absolute;
+  background-color: #283618;
+  color: #f5f5dc;
+}
+
+/* we want to hide img and display content */
+/* we apply the hover to the parent element */
+/* and then add on the child element class to update style */
+
+/* hide the project image */
+.project-card:hover .project-img {
+  display: none;
+}
+
+/* show the project content */
+.project-card:hover .project-content {
+  display: block;
 }
 
 .hideable {
-  display:none;
-}
-.hideable:hover {
-  display:block;
+  display: none;
 }
 
-.hideimg {
+#bodystyle {
+  background-color: #283618;
+  color: #f5f5dc;
+}
+
+/* .hideable:hover {
+  display:block;
+} */
+
+/* .hideimg {
   display:block;
 }
 
 .hideimg:hover {
   display:none;
-}
+} */
 
-#rhys-portrait { 
+#rhys-portrait {
   margin: 2%;
 }
 
@@ -30,15 +57,14 @@
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-} 
- 
-.App-link {
-  color: #d4a373; 
-  text-decoration: none;
-} 
-
-.App-link:hover {
-  color:bisque;
 }
 
+.App-link {
+  color: #d4a373;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  color: bisque;
+}
 
