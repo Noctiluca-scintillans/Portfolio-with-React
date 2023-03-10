@@ -81,7 +81,7 @@ export default function Portfolio() {
 		<div>
 			{projects.map((item) => (
 				<div class="d-inline-flex p-2">
-					<Card className="project-card">
+					<Card className="project-card square border border-3">
 						<img
 							src={item.image}
 							className="project-img"
