@@ -1,6 +1,6 @@
 .project-card {
-  width: 20rem !important;
-  height: 20rem !important;
+  width: 16rem !important;
+  height: 16rem !important;
   position: relative !important;
   background-color: #283618;
   overflow-y: scroll;
@@ -9,7 +9,9 @@
 .project-content {
   position: absolute;
   background-color: #283618;
-  color: #f5f5dc;
+
+  width: 15rem !important;
+ 
   
 }
 
@@ -35,19 +37,9 @@
   background-color: #283618;
   color: #f5f5dc;
   font-size: calc(10px + 2vmin);
+
 }
 
-/* .hideable:hover {
-  display:block;
-} */
-
-/* .hideimg {
-  display:block;
-}
-
-.hideimg:hover {
-  display:none;
-} */
 
 #rhys-portrait {
   margin: 2%;

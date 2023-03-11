@@ -1,9 +1,9 @@
 import React from "react";
 import { MDBFooter } from "mdb-react-ui-kit";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaLinkedinIn } from "react-icons/fa";
-import { GoMarkGithub } from "react-icons/go";
-import { FaStackOverflow } from "react-icons/fa";
+
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { BsStackOverflow } from "react-icons/bs";
 
 export default function Footer() {
 	return (
@@ -16,19 +16,19 @@ export default function Footer() {
 					<a
 						style={{ marginLeft: "3rem" }}
 						href="https://stackoverflow.com/users/9012884/rhys-smoker">
-						<FaStackOverflow />
+						<BsStackOverflow />
 					</a>
 
 					<a
 						style={{ marginLeft: "3rem" }}
 						href="https://www.linkedin.com/in/rhys-smoker/">
-						<FaLinkedinIn />
+						<BsLinkedin />
 					</a>
 
 					<a
 						style={{ marginLeft: "3rem" }}
 						href="https://github.com/Noctiluca-scintillans">
-						<GoMarkGithub />
+						<BsGithub />
 					</a>
 				</div>
 			</section>

@@ -1,42 +1,54 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+//this code is from emailjs:   https://dashboard.emailjs.com/admin/templates/t5zk2vb
+//YOU WILL NEE: npm install @emailjs/browser
 
-export default function Porfolio() {
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+const EmailContactForm = () => {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+		emailjs
+			.sendForm(
+				"service_igsrlz8",
+				"template_yrqe3wk",
+				form.current,
+				"RULpPGERQuAtLqd-9"
+			)
+			.then(
+				(result) => {
+					"you sent it!";
+				},
+				(error) => {
+					"something went wrong!";
+				}
+			);
+	};
+
 	return (
-		<div className="d-flex flex-column align-items-center row-cols-2">
-			<h4>
-				Please Reach out if you have any questions, or just to say "hello"!
-			</h4>
-			<Form>
-				<Form.Group>
-					<Form.Label>Enter your full name:</Form.Label>
-					<Form.Control
-						type="text"
-						placeholder="Captain Tightpants"
-					/>
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>Your email address:</Form.Label>
-					<Form.Control
-						type="email"
-						placeholder="originalbrowncoat@serenityvalley.org"
-					/>
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>Enter your message:</Form.Label>
-					<Form.Control
-						type="number"
-						placeholder="your message"
-					/>
-				</Form.Group>
-				<Button
-					variant="primary"
-					type="submit">
-					Click here to submit form
-				</Button>
-			</Form>
-		</div>
+		<form
+			ref={form}
+			onSubmit={sendEmail}>
+			<label>Name</label>
+			<input
+				type="text"
+				name="user_name"
+			/>
+			<label>Email</label>
+			<input
+				type="email"
+				name="user_email"
+			/>
+			<label>Message</label>
+			<textarea name="message" />
+			<input
+				type="submit"
+				value="Send"
+			/>
+		</form>
 	);
-}
+};
+
+export default EmailContactForm;

@@ -20,10 +20,10 @@ export default function Portfolio() {
 		},
 		{
 			Id: 2,
-			title: "What's in your cart?",
+			title: "What's in Your Cart?",
 			subtitle: "Building the back end for an existing e-commerce site",
 			description:
-				"The shows my mastery of ORM (Object-Relational Mapping). I took a working Express.js API and configured it to use Sequelize to interact with a MySQL database. Please note that the application is not deployed, and the deployed URL takes you to a walkthrough video.",
+				"The shows my mastery of ORM (Object-Relational Mapping). I took a working Express.js API and configured it to use Sequelize to connect with a MySQL database. The 'Deployed' URL shows a walkthrough video.",
 			repo: "https://github.com/Noctiluca-scintillans/E-Commerce-Back-End",
 			deployed_URL:
 				"https://drive.google.com/file/d/1LqEl-L1l1fmLKjAZYBI0TBsrN4bHrP-Z/view",
@@ -32,18 +32,18 @@ export default function Portfolio() {
 		},
 		{
 			Id: 3,
-			title: "Frog Blog with Handlebars",
+			title: "Blogging with Handlebars",
 			subtitle: "A Content Managment System built from scratch.",
 			description:
 				"This app demonstrates my use of the Model-View-Controller architechtural paradigm. It uses Handlebars.js as the templating language, Sequelize as the ORM(Object Relational Mapping), and the express-session npm package for authentification. ",
 			repo: "https://github.com/Noctiluca-scintillans/MVC-Tech-Blog",
 			deployed_URL: "https://dashboard.heroku.com/apps/stormy-gorge-58008",
 			image:
-				"https://cdn.midjourney.com/26486f35-6132-429c-8d55-914459f19111/grid_0.png", // TODO
+				"https://cdn.midjourney.com/f7f033e3-764a-4428-8e47-c7887f972597/grid_0.png", // TODO
 		},
 		{
 			Id: 4,
-			title: "Let's Network!",
+			title: "Mongoose API",
 			subtitle: "NoSQL Challenge: Social Network API",
 			description:
 				"This app shows that I can build and structure an API. I used Express.js for routing, a MongoDB database, and the Mongoose ODM. Please note that the `deployed` url will take you to a walk-through video as the APP is not actually deployed. ",
@@ -54,7 +54,7 @@ export default function Portfolio() {
 		},
 		{
 			Id: 5,
-			title: "Primative yet Progressive",
+			title: "Wall of Text",
 			subtitle: "A Progressive Web Application text editor",
 			description:
 				" This app creates an object store and includes both Get and Put methods. It works on your desktop without an internet connection. It automatically saves content inside the text editor. It is bundled with webpack and cretes a service worker with workbox that caches static assets. It uses babel in order to use async/await and generates a manifest.json using WebpackPwaManifest plugi-in and can be installed as a PWA (Progressive Web Application).To build this PWA I started with an existing application found here: https://github.com/coding-boot-camp/cautious-meme.",
