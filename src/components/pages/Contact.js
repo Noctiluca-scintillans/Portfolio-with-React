@@ -1,8 +1,11 @@
 //this code is from emailjs:   https://dashboard.emailjs.com/admin/templates/t5zk2vb
-//YOU WILL NEE: npm install @emailjs/browser
+//YOU WILL NEED: npm install @emailjs/browser
 
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import "bootstrap/dist/css/bootstrap.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 const EmailContactForm = () => {
 	const form = useRef();
@@ -28,26 +31,27 @@ const EmailContactForm = () => {
 	};
 
 	return (
-		<form
+		<Form
 			ref={form}
 			onSubmit={sendEmail}>
-			<label>Name</label>
-			<input
+			<Form.Label>Please enter your full name</Form.Label>
+			<Form.Control
 				type="text"
 				name="user_name"
 			/>
-			<label>Email</label>
-			<input
+			<Form.Label>Your email</Form.Label>
+			<Form.Control
 				type="email"
 				name="user_email"
 			/>
-			<label>Message</label>
-			<textarea name="message" />
-			<input
-				type="submit"
-				value="Send"
-			/>
-		</form>
+			<Form.Label>Your message:</Form.Label>
+			<Form.Control name="message" />
+			<Button
+				variant="primary"
+				type="submit">
+				Click here to send your message
+			</Button>
+		</Form>
 	);
 };
 

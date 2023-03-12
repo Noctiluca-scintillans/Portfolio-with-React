@@ -18,7 +18,7 @@ export default function AboutMe() {
 				spent my 20's studying marine ecosystems and my 30's teaching math and
 				science in public and private schools. My travels took me from the
 				Channel Islands to the remote Pribilof Islands of the Bering Sea. I'm
-				now settled in Bellingham WA, where I own a home with my wife and young
+				now settled in Bellingham WA, where I live with my wife and young
 				children. I enjoy coding, spending time with my family, and building
 				things. I'm looking for a career where I can continually learn and
 				master new systems, and where my work-ethic and desire to help others is
