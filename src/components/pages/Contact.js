@@ -22,10 +22,10 @@ const EmailContactForm = () => {
 			)
 			.then(
 				(result) => {
-					"you sent it!";
+					alert("you sent it!");
 				},
 				(error) => {
-					"something went wrong!";
+					alert("something went wrong!");
 				}
 			);
 	};
